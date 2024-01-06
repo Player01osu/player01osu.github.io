@@ -1,1 +1,28 @@
-Hello, world!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<script>
+
+if (window.location.hash !== "") {
+    let location = window.location;
+    location.replace(location.origin + location.pathname + '?' + location.hash.slice(1))
+}
+
+let params = new URLSearchParams(document.location.search);
+let access_token = params.get("access_token");
+if (access_token != null) {
+    let p = document.createElement("p");
+    p.innerText = access_token;
+    document.childNodes[0].appendChild(p);
+}
+</script>
