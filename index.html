@@ -23,6 +23,6 @@ let access_token = params.get("access_token");
 if (access_token != null) {
     let p = document.createElement("p");
     p.innerText = access_token;
-    document.childNodes[0].appendChild(p);
+    document.body.appendChild(p);
 }
 </script>
