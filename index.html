@@ -15,14 +15,33 @@
 
 if (window.location.hash !== "") {
     let location = window.location;
-    location.replace(location.origin + location.pathname + '?' + location.hash.slice(1))
+    let redirect = location.origin + location.pathname + '?' + location.hash.slice(1);
+    location.replace(redirect);
+}
+
+function access_token_element(access_token) {
+    let div = document.createElement("div");
+    let details = document.createElement("details");
+    let summary = document.createElement("summary");
+    let copy_button = document.createElement("button");
+
+    div.id = "access_token";
+
+    summary.innerText = "Access Token (Keep this a secret!)";
+    details.innerText = access_token;
+    copy_button.innerText = "Copy to clipboard";
+
+    copy_button.onclick = () => navigator.clipboard.writeText(access_token);
+
+    details.appendChild(summary);
+    div.appendChild(details);
+    div.appendChild(copy_button);
+    document.body.appendChild(div);
 }
 
 let params = new URLSearchParams(document.location.search);
 let access_token = params.get("access_token");
 if (access_token != null) {
-    let p = document.createElement("p");
-    p.innerText = access_token;
-    document.body.appendChild(p);
+    access_token_element(access_token);
 }
 </script>
