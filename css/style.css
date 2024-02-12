@@ -1,0 +1,160 @@
+body {
+    font-family: sans;
+    line-height: 1.5;
+}
+
+#contact-infos {
+    font-size: 0.75em;
+}
+
+.contact-info {
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+#main-header {
+    color: #10A3BB;
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-style: italic;
+    font-size: 40pt;
+}
+
+#name-header {
+    color: #ABABAB;
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-size: 20pt;
+    margin: 0.2vh 0px 5.2vh 0px;
+}
+
+
+@media (max-width: 500px) {
+    #main-header {
+        font-size: 27pt;
+    }
+
+    #name-header {
+        font-size: 17pt;
+    }
+}
+
+#main-content {
+    padding-left: 11%;
+    padding-right: 11%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+@media (max-width: 1500px) {
+    #main-content {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+a {
+    color: #F0F0F0;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+}
+
+#right-side > div:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+h2 {
+    color: #20AB80;
+    font-family: serif;
+    font-size: 26pt;
+    margin: 10px 0px 0px 0px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    margin: 25px 0px 25px 0px;
+}
+
+.education > h4 {
+    margin: 0px 0px 0px 0px;
+}
+
+.education-year {
+    grid-row: 1;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 100%;
+    color: #ABABAB;
+    font-weight: normal;
+}
+
+.education-year {
+    font-size: 20px;
+    color: #ABABAB;
+    font-weight: normal;
+}
+
+.education-inst {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+}
+
+.education-department {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.education-type {
+    grid-column: auto;
+    grid-row: 3 / 3;
+    margin: 0px 0px 0px 0px;
+}
+
+@media (max-width: 1500px) {
+    .education {
+        display: block;
+    }
+    .education-year {
+        text-align: left;
+    }
+
+    .education-inst {
+        text-align: left;
+    }
+}
+
+.work-experience {
+    margin: 25px 0px 25px 0px;
+}
+
+.work-position {
+    margin: 0px 0px 0px 0px;
+}
+
+.work-year {
+    margin: 0px 0px 0px 0px;
+    color: #ABABAB;
+    font-weight: normal;
+}
+
+.work-description {
+    margin: 0px 0px 0px 0px;
+}
