@@ -92,10 +92,6 @@ h2 {
     margin: 25px 0px 25px 0px;
 }
 
-.education > h4 {
-    margin: 0px 0px 0px 0px;
-}
-
 .education-year {
     grid-row: 1;
     vertical-align: middle;
@@ -106,9 +102,10 @@ h2 {
 }
 
 .education-year {
-    font-size: 20px;
     color: #ABABAB;
     font-weight: normal;
+    display: inline;
+    margin: 0px 0px 0px 0px;
 }
 
 .education-inst {
@@ -121,6 +118,7 @@ h2 {
 .education-department {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
+    margin: 0px 0px 0px 0px;
 }
 
 .education-type {
@@ -158,4 +156,30 @@ h2 {
 
 .work-description {
     margin: 0px 0px 0px 0px;
+}
+
+#print {
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 1% 1% 1% 1%;
+    outline: 5px solid;
+    overflow: auto;
+}
+
+.print-link {
+    font-size: 17pt;
+}
+
+#footer {
+    display: none;
+}
+
+@media print {
+    #footer {
+        display: block;
+        bottom: 0;
+        margin-top: 550px;
+        width: 100%;
+    }
 }
