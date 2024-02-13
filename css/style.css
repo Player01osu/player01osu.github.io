@@ -72,24 +72,25 @@ a {
     margin-bottom: 70px;
 }
 
-h2 {
-    color: #20AB80;
-    font-family: serif;
-    font-size: 26pt;
-    margin: 10px 0px 0px 0px;
-    font-weight: 500;
-}
-
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-right: 30px;
 }
 
+.project-name {
+    margin: 0px 0px 10px 0px;
+}
+
+.project-description {
+    margin: 0px 0px 0px 0px;
+}
+
+.project-description > p {
+    margin: 0px 0px 0px 0px;
+}
+
 .education {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    margin: 25px 0px 25px 0px;
+    margin: 0px 0px 25px 0px;
 }
 
 .education-year {
@@ -112,7 +113,7 @@ h2 {
     grid-column: 2 / 3;
     grid-row: 1;
     margin: 0px 0px 0px 0px;
-    text-align: right;
+    text-align: left;
 }
 
 .education-department {
@@ -157,6 +158,27 @@ h2 {
 .work-description {
     margin: 0px 0px 0px 0px;
 }
+
+.involvement-name {
+    margin: 0px 0px 0px 0px;
+}
+
+.involvement-description {
+    margin: 0px 0px 0px 0px;
+}
+
+.involvement {
+    margin: 15px 0px 20px 0px;
+}
+
+.section-header {
+    margin: 15px 0px 15px 0px;
+    color: #20AB80;
+    font-family: serif;
+    font-size: 26pt;
+    font-weight: 500;
+}
+
 
 #print {
     display: inline-block;

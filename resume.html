@@ -20,55 +20,63 @@
             <div id="main-content">
                 <div id="left-side">
                     <div id="projects">
-                        <h2>Projects</h2>
+                        <h2 class="section-header">Projects</h2>
 
                         <div class="project">
-                            <h3><a href="https://github.com/Player01osu/aniki">Aniki</a> - Rust</h3>
-                            <p>Aniki organizes and adds metadata to locally (on disk) stored shows.
-                            It provides a clean native interface to watch and navigate shows, as well as
-                            syncing across devices through another server.</p>
-                            <ul>
-                                <li> Add metadata to locally stored shows </li>
-                                <li> Organize shows by recently watched </li>
-                                <li> Scraping metadata from websites </li>
-                                <li> Makes API requests (GraphQL) to other services </li>
-                                <li> Barebone graphics library (SDL2) </li>
-                                <li> Develop UI framework by hand </li>
-                                <li> Font and texture caching done by hand </li>
-                                <li> Datastructures and algorithms used to efficiently index and fuzzy search items </li>
-                                <li> Exploration of stateful UI and managing state </li>
-                            </ul>
+                            <h3 class="project-name"><a href="https://github.com/Player01osu/aniki">Aniki</a> - Rust</h3>
+                            <div class="project-description">
+                                <p>Aniki organizes and adds metadata to locally (on disk) stored shows.
+                                    It provides a clean native interface to watch and navigate shows, as well as
+                                    syncing across devices through another server.</p>
+                                <ul>
+                                    <li> Add metadata to locally stored shows </li>
+                                    <li> Organize shows by recently watched </li>
+                                    <li> Scraping metadata from websites </li>
+                                    <li> Makes API requests (GraphQL) to other services </li>
+                                    <li> Barebone graphics library (SDL2) </li>
+                                    <li> Develop UI framework by hand </li>
+                                    <li> Font and texture caching done by hand </li>
+                                    <li> Datastructures and algorithms used to efficiently index and fuzzy search items </li>
+                                    <li> Exploration of stateful UI and managing state </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="project">
-                            <h3><a href="https://github.com/Player01osu/minesweeper">Minesweeper</a> - C99</h3>
-                            <p>This project is a minesweeper implementation in C. It was mainly created to explore
-                            SDL2 and the various features it has.</p>
-                            <ul>
-                                <li> Complete minesweeper implementation </li>
-                                <li> Handling program state </li>
-                                <li> Managing memory </li>
-                                <li> Barebone graphics library (SDL2) </li>
-                                <li> Font and texture caching done by hand </li>
-                            </ul>
+                            <h3 class="project-name"><a href="https://github.com/Player01osu/minesweeper">Minesweeper</a> - C99</h3>
+                            <div class="project-description">
+                                <p>This project is a minesweeper implementation in C. It was mainly created to explore
+                                    SDL2 and the various features it has.</p>
+                                <ul>
+                                    <li> Complete minesweeper implementation </li>
+                                    <li> Handling program state </li>
+                                    <li> Managing memory </li>
+                                    <li> Barebone graphics library (SDL2) </li>
+                                    <li> Font and texture caching done by hand </li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="project">
-                            <h3><a href="https://github.com/Player01osu/Dijkstra">Dijkstra Visualization</a> - Haskell</h3>
-                            <p>This project is an implementation of Dijkstra's Shortest Path algorithm in Haskell. Another component
-                            of this application is a visualization of the algorithm, as well as the ability to create new graphs rather trivially.</p>
-                            <ul>
-                                <li> Rethinking of common graph problem in functional way </li>
-                                <li> Organizing program in different problem space </li>
-                                <li> Exploring adjacency matrices as a way to represent graphs </li>
-                            </ul>
+                            <h3 class="project-name"><a href="https://github.com/Player01osu/Dijkstra">Dijkstra Visualization</a> - Haskell</h3>
+                            <div class="project-description">
+                                <p>This project is an implementation of Dijkstra's Shortest Path algorithm in Haskell. Another component
+                                    of this application is a visualization of the algorithm, as well as the ability to create new graphs rather trivially.</p>
+                                <ul>
+                                    <li> Rethinking of common graph problem in functional way </li>
+                                    <li> Organizing program in different problem space </li>
+                                    <li> Exploring adjacency matrices as a way to represent graphs </li>
+                                </ul>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="project">
-                            <h3><a href="https://github.com/Player01osu/ccalc">ccalc</a> - C99</h3>
+                    <div class="project">
+                        <h3 class="project-name"><a href="https://github.com/Player01osu/ccalc">ccalc</a> - C99</h3>
+                        <div class="project-description">
                             <p>ccalc was prompted by the creation of another project - namely an arena allocator -
-                            developed by a friend and was developed partially to explore it. The program runs in
-                            REPL fashion, and is able to do basic arithmetic, variable assignment, and functions.</p>
+                                developed by a friend and was developed partially to explore it. The program runs in
+                                REPL fashion, and is able to do basic arithmetic, variable assignment, and functions.</p>
                             <ul>
                                 <li> Basic calculator </li>
                                 <li> Supports functions </li>
@@ -77,12 +85,14 @@
                                 <li> Implement shunting yard algorithm to parse and evaluate expressions </li>
                             </ul>
                         </div>
+                    </div>
 
-                        <div class="project">
-                            <h3><a href="https://github.com/Player01osu/piss-assembler">PISS Assembler</a> - C99</h3>
+                    <div class="project">
+                        <h3 class="project-name"><a href="https://github.com/Player01osu/piss-assembler">PISS Assembler</a> - C99</h3>
+                        <div class="project-description">
                             <p>This project mainly serves as a personal learning tool for developing a stack-based
-                            virtual machine. It is able to create new stack frames, perform basic stack operations,
-                            and perform branch operations.</p>
+                                virtual machine. It is able to create new stack frames, perform basic stack operations,
+                                and perform branch operations.</p>
                             <ul>
                                 <li> Toy stack-based virtual machine </li>
                                 <li> Byte-code Assembler </li>
@@ -95,24 +105,24 @@
 
                 <div id="right-side">
                     <div id="educations">
-                        <h2>Education</h2>
+                        <h2 class="section-header">Education</h2>
 
                         <div class="education">
-                            <h3 class="education-inst">Michigan Technological University</h3>
+                            <h3 class="education-inst">Michigan Technological University - GPA 4.0</h3>
                             <h4 class="education-year">2023 - Approx. 2027</h4>
                             <h4 class="education-department">Undergraduate of Computer Science</h4>
                             <p class="education-type">Computer Science</p>
                         </div>
 
                         <div class="education">
-                            <h3 class="education-inst">West Bloomfield High School</h3>
+                            <h3 class="education-inst">West Bloomfield High School - GPA 4.0</h3>
                             <h4 class="education-year">2019 - 2023</h4>
                             <h4 class="education-department">High School Diploma</h4>
                         </div>
                     </div>
 
                     <div id="work-experiences">
-                        <h2>Work Experiences</h2>
+                        <h2 class="section-header">Work Experiences</h2>
 
                         <div class="work-experience">
                             <h3 class="work-position">CCLC (Coaching)</h3>
@@ -141,27 +151,27 @@
                     </div>
 
                     <div id="involvements">
-                        <h2>Involvements</h2>
+                        <h2 class="section-header">Involvements</h2>
 
                         <div class="involvement">
-                            <h3>ASCII Student Organization</h3>
-                            <p>Assist in hosting computing related events at Tech, most notably Winter Wonderhack.</p>
+                            <h3 class="involvement-name">ASCII Student Organization</h3>
+                            <p class="involvement-description">Assist in hosting computing related events at Tech, most notably Winter Wonderhack.</p>
                         </div>
 
                         <div class="involvement">
-                            <h3>CCLC (Coaching)</h3>
-                            <p>Coaching students of various skill levels in Computer Science courses.</p>
+                            <h3 class="involvement-name">CCLC (Coaching)</h3>
+                            <p class="involvement-description">Coaching students of various skill levels in Computer Science courses.</p>
                         </div>
 
                         <div class="involvement">
-                            <h3>Monster Mini Code Golf</h3>
-                            <p>Winning best underclassmen and best of Python category. This event consists
+                            <h3 class="involvement-name">Monster Mini Code Golf</h3>
+                            <p class="involvement-description">Winning best underclassmen and best of Python category. This event consists
                             of several coding problems which are to be done in as few characters as possible.</p>
                         </div>
 
                         <div class="involvement">
-                            <h3>CS Education Research Group</h3>
-                            <p>Translating Common LISP code from A.I. Book 'Building Problem Solvers' and
+                            <h3 class="involvement-name">CS Education Research Group</h3>
+                            <p class="involvement-description">Translating Common LISP code from A.I. Book 'Building Problem Solvers' and
                             'Paradigms of Artificial Intelligence Programming' to Java.</p>
                         </div>
                     </div>
