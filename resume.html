@@ -44,13 +44,19 @@
         <h3>Bonzai Brawl Ant Game (Language: C99)</h3>
         <ul>
             <li>Game for MTU's Bonzai Brawl event, in which participants write an AI for a game, and use them to face-off against other participants</li>
-            <li>Server simulates at a set tickrate, clients receive and send data through pipes</li>
-            <li>AI Clients can be written in any language that can: read stdin, write stdout, and parse JSON</li>
-            <li>Top-down RTS in which participants control ants, and can interact with the world to expand their territory, or kill the opponent queen</li>
-            <li>A variety of different world objects to interact with: ant eggs, food items, rocks, ect.</li>
-            <li>Includes a replay format that is designed specifically for this game</li>
+            <li>AI Clients communicate through stdin and stdout pipes</li>
+            <li>Consists of two parts: core, and the visualizer</li>
             <li>Basic level editor</li>
             <li>Support for loading different asset packs</li>
+            <li>Skills Involved: API design, 2D graphics, piping, multi-threading, algorithm design (A*, convex hull, collision detection, etc.), compression, serialization</li>
+        </ul>
+        <h3>Paper Engine (Language: Rust) - <a target="_blank" href="https://github.com/Player01osu/paper-engine">link</a></h3>
+        <ul>
+            <li>Index and search contents of locally stored pdfs</li>
+            <li>Paper relevancy ranked using TF-IDF</li>
+            <li>Simple web frontend</li>
+            <li>Saved index state with custom fitted binary format</li>
+            <li>Skills Involved: serialization, API design, algorithm design</li>
         </ul>
         <h3>CLinear Algebra (Language: C99) - <a target="_blank" href="https://github.com/Player01osu/clinear-algebra">link</a></h3>
         <ul>
@@ -60,13 +66,6 @@
             <li>Ability to change out component types</li>
             <li>Supports elementary vector and matrix operations such as: component-wise addition, multiplication, dot-products, scaling, and matrix-vector multiplication</li>
         </ul>
-        <h3>Paper Engine (Language: Rust) - <a target="_blank" href="https://github.com/Player01osu/paper-engine">link</a></h3>
-        <ul>
-            <li>Index and search contents of locally stored pdfs</li>
-            <li>TF-IDF Primarily used to rank papers</li>
-            <li>Simple web frontend</li>
-            <li>Saved index state with custom fitted binary format</li>
-        </ul>
         <h3>SMEPS - SDL2 Modal Editor Project (Language: Odin)</h3>
         <ul>
             <li>Input and OpenGL initialization handled by SDL2</li>
@@ -75,12 +74,10 @@
             <li>Fast and lightweight without IDE cruft</li>
             <li>An actual native application (does not need to bundle and spawn a entire chrome process)</li>
         </ul>
-        <h3>PISS Bytecode (Language: C99) - <a target="_blank" href="https://github.com/Player01osu/piss-assembler">link</a></h3>
+        <h3>Portable Instruction Single Statement Bytecode (Language: C99) - <a target="_blank" href="https://github.com/Player01osu/piss-assembler">link</a></h3>
         <ul>
             <li>Stack-based VM</li>
-            <li>Typed/sized variables</li>
-            <li>Simple calling convention</li>
-            <li>Low-level memory control and simple instructions while not being overly complex to get right</li>
+            <li>Allow for low-level memory access (and by extension, C ABI access)</li>
             <li>Extremely fast interpretation and execution</li>
         </ul>
 
@@ -89,34 +86,36 @@
             <h3>ASCII Student Organization</h3>
             <p>Assist in hosting computing related events at Tech.</p>
         </div>
-
         <div class="involvement">
             <h3>College of Computing Learning Center Coach</h3>
             <p>Coaching and providing assistance to students of various skill levels in Computer related courses.</p>
         </div>
-
         <div class="involvement">
             <h3>Monster Mini Code Golf - Best Underclassmen, Best Python Category</h3>
             <p>Winning best underclassmen and best of Python category. This event consists
                 of several coding problems which are to be done in as few characters as possible.</p>
         </div>
-
         <div class="involvement">
             <h3>Winter Wonderhack - Most Creative</h3>
             <p>Winning most creative project in the 2024 MTU Winter Wonderhack. The project
                 was a text-based adventure game that utilized natural language and natural language parsing.</p>
         </div>
 
-        <div class="involvement">
-            <h3>CS Education Research Group</h3>
-            <p>Translating Common LISP code from A.I. Book 'Building Problem Solvers' and
-                'Paradigms of Artificial Intelligence Programming' to Java.</p>
-        </div>
         <h2>Employment</h2>
         <div class="work-experience">
             <h3>College of Computing Learning Center Coach</h3>
             <h4>Jan 2024 - Present</h4>
             <p>Coaching students of various skill levels in Computer Science courses.</p>
+        </div>
+        <div class="work-experience">
+            <h3>Computer Science Lab Assistant</h3>
+            <h4>Aug 2024 - Present</h4>
+            <p>Assist students in computer science labs for CS1111 and CS1121</p>
+        </div>
+        <div class="work-experience">
+            <h3>Undergraduate Research Internship Program</h3>
+            <h4>Aug 2024 - Present</h4>
+            <p>Explore integrating classical artificial intelligence models, such as various problem solver engines, with modern AI techniques.</p>
         </div>
     </body>
 </html>
