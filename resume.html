@@ -1,121 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <title>Résumé - Nate Pongtankul</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Nate Pongtankul - Resume</title>
-        <link href="css/resume.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/resume-2.css">
     </head>
     <body>
-        <header>
-            <span>Email: <a href=mailto:natepong01@gmx.com>natepong01@gmx.com</a></span>
-            <span>Phone: <a href=tel:+12489494438>248-949-4438</a></span>
-            <span>Github: <a target="_blank" href=https://github.com/Player01osu>Player01osu</a></span>
-            <span>Resume: <a target="_blank" href=https://player01osu.github.io/resume>https://player01osu.github.io/resume</a></span>
-        </header>
-
-        <h2>Education</h2>
-        <div class="education">
-            <h4>Michigan Technological University - GPA 4.0</h4>
-            <h5>2023 - (Estimated) 2027 | Undergraduate of Computer Science - Computer Science</h5>
-        </div>
-        <div class="education">
-            <h4>West Bloomfield High School - GPA 4.0</h4>
-            <h5>2019 - 2023 | High School Diploma</h5>
+        <div id="main-header">
+            <header>
+                <div>
+                    <h1 style="display: inline;">Nate Pongtankul</h1>
+                    <div id="contact-info">
+                        <span>Phone #: (248) 949 4438</span>
+                        <span>Email: npongtan01@gmx.com</span>
+                    </div>
+                </div>
+                <!-- <h2>Curriculum Vitae</h2> -->
+            </header>
         </div>
 
-        <h2>Complete Courses</h2>
-        <div>
-            <h3>CS1142 - Programming at HW/SW Interface (Final Grade: A)</h3>
-            <p>Learn MIPS, C and various low-level concepts such as bitfields, two's compliments, and IEEE754 floating points.</p>
-            <h3>CS2311 - Discrete Structures (Final Grade: A)</h3>
-            <p>Introduction to pure mathematics concepts such as sets, relations, graphs, and proof-writing, and their various applications in computing.</p>
-            <h3>CS2321 - Data Structures (Final Grade: A)</h3>
-            <p>Learn about and implement a multitude of basic data structures such as dynamic arrays, queues, graphs, and hashmaps.</p>
-            <h3>MA2330 - Intro to Linear Algebra (Final Grade: A)</h3>
-            <p>Learn about elementary linear algebra concepts such as vectors, matrices, vector-matrix operations, applications of vector-maxtrix operations, and some pure math things like rank span, and vector spaces.</p>
-            <h3>MA2160 - Calculus with Technology II (Final Grade: A)</h3>
-            <p>Learn a variety of integration techniques, such as interation by substitution, integration by parts, and real-world applications of them.</p>
-            <h3>MA3520 - Intro to Differential Equations (Final Grade: A)</h3>
-            <p>Learn different methods to solve various classes of differential equations.</p>
+        <div id="objectives" class="part">
         </div>
 
-        <h2>Projects</h2>
-        <h3>Bonzai Brawl Ant Game (Language: C99)</h3>
-        <ul>
-            <li>Game for MTU's Bonzai Brawl event, in which participants write an AI for a game, and use them to face-off against other participants</li>
-            <li>AI Clients communicate through stdin and stdout pipes</li>
-            <li>Consists of two parts: core, and the visualizer</li>
-            <li>Basic level editor</li>
-            <li>Support for loading different asset packs</li>
-            <li>Skills Involved: API design, 2D graphics, piping, multi-threading, algorithm design (A*, convex hull, collision detection, etc.), compression, serialization</li>
-        </ul>
-        <h3>Paper Engine (Language: Rust) - <a target="_blank" href="https://github.com/Player01osu/paper-engine">link</a></h3>
-        <ul>
-            <li>Index and search contents of locally stored pdfs</li>
-            <li>Paper relevancy ranked using TF-IDF</li>
-            <li>Simple web frontend</li>
-            <li>Saved index state with custom fitted binary format</li>
-            <li>Skills Involved: serialization, API design, algorithm design</li>
-        </ul>
-        <h3>CLinear Algebra (Language: C99) - <a target="_blank" href="https://github.com/Player01osu/clinear-algebra">link</a></h3>
-        <ul>
-            <li>Auto-generate linear algebra header files</li>
-            <li>Support for both vectors and matrices</li>
-            <li>Can specify the range of vector and matrix dimensions to generate</li>
-            <li>Ability to change out component types</li>
-            <li>Supports elementary vector and matrix operations such as: component-wise addition, multiplication, dot-products, scaling, and matrix-vector multiplication</li>
-        </ul>
-        <h3>SMEPS - SDL2 Modal Editor Project (Language: Odin)</h3>
-        <ul>
-            <li>Input and OpenGL initialization handled by SDL2</li>
-            <li>Based on modal system used in editors like VIM and Kakoune, but much more powerful</li>
-            <li>Allows for custom modes, which can do simple key remaps, to even large complex operations</li>
-            <li>Fast and lightweight without IDE cruft</li>
-            <li>An actual native application (does not need to bundle and spawn a entire chrome process)</li>
-        </ul>
-        <h3>Portable Instruction Single Statement Bytecode (Language: C99) - <a target="_blank" href="https://github.com/Player01osu/piss-assembler">link</a></h3>
-        <ul>
-            <li>Stack-based VM</li>
-            <li>Allow for low-level memory access (and by extension, C ABI access)</li>
-            <li>Extremely fast interpretation and execution</li>
-        </ul>
-
-        <h2>Involvements</h2>
-        <div class="involvement">
-            <h3>ASCII Student Organization</h3>
-            <p>Assist in hosting computing related events at Tech.</p>
-        </div>
-        <div class="involvement">
-            <h3>College of Computing Learning Center Coach</h3>
-            <p>Coaching and providing assistance to students of various skill levels in Computer related courses.</p>
-        </div>
-        <div class="involvement">
-            <h3>Monster Mini Code Golf - Best Underclassmen, Best Python Category</h3>
-            <p>Winning best underclassmen and best of Python category. This event consists
-                of several coding problems which are to be done in as few characters as possible.</p>
-        </div>
-        <div class="involvement">
-            <h3>Winter Wonderhack - Most Creative</h3>
-            <p>Winning most creative project in the 2024 MTU Winter Wonderhack. The project
-                was a text-based adventure game that utilized natural language and natural language parsing.</p>
+        <div id="education" class="part">
+            <h3>Education</h3>
+            <div class="education-entry">
+                <h4>Michigan Technological University: GPA 4.0 / 4.0</h4>
+                <div class="date">Apr 2026 (Scheduled)</div>
+                <div>Undergraduate of Computer Science</div>
+                <div class="education-extra">
+                    <div>Major: Computer Science</div>
+                    <div>Minor: Mathematical Sciences</div>
+                </div>
+            </div>
         </div>
 
-        <h2>Employment</h2>
-        <div class="work-experience">
-            <h3>College of Computing Learning Center Coach</h3>
-            <h4>Jan 2024 - Present</h4>
-            <p>Coaching students of various skill levels in Computer Science courses.</p>
+        <div id="experience" class="part">
+            <h3>Experience</h3>
+            <div class="experience-entry">
+                <h4>Undergraduate Research Internship Program</h4>
+                <div class="date">Sep 2024 - Mar 2025</div>
+                <div>
+                    Explore integrating classical artificial intelligence
+                    models, such as various problem solver engines, with modern
+                    AI techniques.
+                </div>
+            </div>
+            <div class="experience-entry">
+                <h4>Computer Science Lab Assistant</h4>
+                <div class="date">Sep 2024 - Dec 2025</div>
+                <div>
+                    Assist students in computer science labs for introductory
+                    programming courses.
+                </div>
+            </div>
+            <div class="experience-entry">
+                <h4>Paper Engine (Rust Project)</h4>
+                <div class="date">Aug 2024 - Present</div>
+                <div>
+                    Index and search contents of locally stored pdfs and allow
+                    querying through a simple web frontend. Save state with
+                    inhouse serialization and deserialization format.
+                </div>
+                <div>
+                    Skills Involved: serialization, API design, algorithm design
+                </div>
+            </div>
+            <div class="experience-entry">
+                <h4>College of Computing Learning Center Coach</h4>
+                <div class="date">Jan 2024 - Present</div>
+                <div>
+                    Coaching students of various skill levels in Computer
+                    Science courses.
+                </div>
+            </div>
         </div>
-        <div class="work-experience">
-            <h3>Computer Science Lab Assistant</h3>
-            <h4>Aug 2024 - Present</h4>
-            <p>Assist students in computer science labs for CS1111 and CS1121</p>
+
+        <div id="leadership" class="part">
+            <h3>Leadership</h3>
+            <div class="leadership-entry">
+                <h4>Rhythm Game Club - Secretary</h4>
+                <div class="date">Sep 2025 - Present</div>
+                <div>
+                    Help manage and run various arcade and non-arcade rhythm
+                    games at club meetings.
+                </div>
+            </div>
+            <div class="leadership-entry">
+                <h4>Japanese Club - President</h4>
+                <div class="date">Sep 2025 - Present</div>
+                <div>
+                    Student organization I started with interested students.
+                    Manage and setup club meetings.
+                </div>
+            </div>
+            <div class="leadership-entry">
+                <h4>ASCII Student Organization</h4>
+                <div class="date">Sep 2024 - Mar 2025</div>
+                <div>
+                    Assist in hosting computing related events at Tech.
+                </div>
+            </div>
         </div>
-        <div class="work-experience">
-            <h3>Undergraduate Research Internship Program</h3>
-            <h4>Aug 2024 - Present</h4>
-            <p>Explore integrating classical artificial intelligence models, such as various problem solver engines, with modern AI techniques.</p>
+
+<!-- Skills section might not be needed if skills can be demonstrated using experience
+        <div id="skills" class="part">
+            <h3>Skills</h3>
+            <div class="skill-entry"> - C/C++ </div>
+            <div class="skill-entry"> - Java and Object Oriented Programming </div>
+            <div class="skill-entry"> - Haskell, Scheme and functional languages </div>
+            <div class="skill-entry"> - Python </div>
+            <div class="skill-entry"> - Git and version control </div>
+        </div>
+-->
+
+        <div id="honors" class="part">
+            <h3>Honors</h3>
+            <div class="honor-entry">
+                <h4>
+                    Winter Wonderhack - Most Creative
+                </h4>
+                <div class="date">Dec 2024</div>
+                <div>
+                        Winning most creative project in the 2024 MTU Winter
+                        Wonderhack. The project was a text-based adventure game
+                        that utilized natural language and natural language
+                        parsing.
+                </div>
+            </div>
+            <div class="honor-entry">
+                <h4>
+                    Monster Mini Code Golf - Best Underclassmen, Best Python Category
+                </h4>
+                <div class="date">Dec 2023</div>
+                <div>
+                    Winning best underclassmen and best of Python category.
+                    This event consists of several coding problems which are to
+                    be done in as few characters as possible.
+                </div>
+            </div>
+            <div class="honor-entry">
+                <h4>
+                    Michigan Tech Dean's List 4.0
+                </h4>
+                <div class="date">Sep 2023 - Present</div>
+                <div>
+                    Enrolled at Michigan Tech with at least 12 credits a
+                    semester and reach a GPA of 4.00.
+                </div>
+            </div>
         </div>
     </body>
 </html>

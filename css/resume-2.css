@@ -1,0 +1,50 @@
+body {
+    font-size: 14px;
+}
+
+h1 {
+    margin: 3px 0px 3px 0px;
+    font-size: 54px;
+}
+
+h2 {
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+    display: inline;
+}
+
+h4 {
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: 650;
+    font-style: italic;
+    display: inline;
+}
+
+#main-header span {
+    margin: 0px 4px 0px 4px;
+    float: right;
+}
+
+#contact-info {
+    display: inline;
+    font-size: 10px;
+}
+
+.education-extra {
+    font-size: 12px;
+}
+
+.date {
+    display: inline;
+    float: right;
+}
+
+.part {
+    margin: 8px 0px 0px 0px;
+}
