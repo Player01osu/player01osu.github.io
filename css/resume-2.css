@@ -1,26 +1,59 @@
-body {
-    font-size: 14px;
+/*
+ * WORKING ON:
+ * - Should I keep more experiences?
+ * - Should I change honors to awards?
+ * - Should I increase whitespace between section?
+ *    (My gut says yes, because more whitespace looks nice, but I wanna fit
+ *    onto one page)
+ * - Can I remove the 20xx in the years?
+ * - Completely center the body of the resume (Like Jon's resume)
+ */
+
+
+@media print {
+    body {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (width >= 900px) {
+    body {
+        font-size: 15pt;
+        margin: 0 auto;
+        max-width: 44em;
+        padding: 1.5em 2.5em;
+        background: #90FFC0;
+    }
+}
+
+ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 1.1em;
 }
 
 h1 {
     margin: 0px 0px 0px 0px;
-    font-size: 54px;
+    font-weight: 700;
+    font-size: 3.4em;
+    line-height: 1em;
 }
 
 h2 {
     margin: 0px 0px 0px 0px;
-    font-size: 20px;
+    font-size: 2em; /* 20px; */
 }
 
 h3 {
     margin: 0px 0px 0px 0px;
-    font-size: 18px;
+    /* font-family: sans-serif; */
+    font-size: 1.2em; /* 16px; */
+    font-weight: 800;
     display: inline;
 }
 
 h4 {
     margin: 0px 0px 0px 0px;
-    font-size: 14px;
+    font-size: 1.0em; /* 14px; */
     font-weight: 650;
     font-style: italic;
     display: inline;
@@ -34,7 +67,7 @@ h4 {
 
 #contact-info {
     margin: 0px 0px 0px 0px;
-    font-size: 10px;
+    font-size: 0.8em; /* 10px; */
     float: right;
 
     grid-column-start: 2;
@@ -44,14 +77,33 @@ h4 {
 }
 
 .education-extra {
-    font-size: 12px;
+    font-size: 0.8em; /* 10px; */
 }
 
 .date {
+    padding: 0 0 0 1.6em;
     display: inline;
-    float: right;
+    float: left;
+    color: #404040;
+    font-weight: 400;
+    font-size: 0.8em; /* 10px; */
 }
 
 .part {
-    margin: 8px 0px 0px 0px;
+    /* margin: 14px 0px 0px 0px; */
+    margin: 0.85em 0 0 0;
+}
+
+.entry {
+    /* padding: 0px 0px 0px 15px; */
+    padding: 0 0 0 1.1em;
+    display: grid;
+    grid-template-columns: auto 8.5em;
+    grid-auto-rows: auto auto;
+}
+
+.content {
+    /* margin: 0px 0px 5px 0px; */
+    margin: 0 0 0.26em 0;
+    padding: 0px 0px 0px 0px;
 }
