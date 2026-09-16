@@ -30,6 +30,12 @@
     }
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+
 ul {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0.73em;
@@ -131,4 +137,10 @@ h4 {
     font-size: 0.90em;
     font-weight: 600;
     color: #5A5A5A;
+}
+
+@media print {
+    .nprint {
+        display: none;
+    }
 }
