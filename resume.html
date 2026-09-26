@@ -7,10 +7,32 @@
     </head>
     <body>
         <header>
+            <div style="display: none;" id="uhoh_message"></div>
+            <div class="web-header nprint">
+                <div class="web-header-element">
+                    <a onclick="window.print()">Print</a>
+                </div>
+                <form class="web-header-element">
+                    <label for="filter_code">Filter Code:</label>
+                    <input style="width: 50px;" type="text" id="filter_code" name="filter_code">
+                    <input type="submit" id="filter-btn" value="Filter">
+                </form>
+                <form class="web-header-element">
+                    <label for="generic_filter">Generic Filter:</label>
+                    <select onchange="this.form.submit()" name="filter_code" id="generic_filter">
+                        <option value="">--Select a Filter--</option>
+                        <option value="000">Show All</option>
+                        <option value="001">Web Development</option>
+                        <option value="002">Teaching</option>
+                        <option value="003">Embedded</option>
+                    </select>
+                </form>
+            </div>
             <div id="main-header">
                 <div id="name-header">
                     <h1>Nate Pongtankul</h1>
                 </div>
+                <!-- XXX: On smaller devices, this should wrap onto new line -->
                 <div id="contact-info">
                     <div style="display: inline; float: right;">
                         <div><a href="mailto:nate@syourai.org">nate@syourai.org</a></div>
@@ -32,13 +54,6 @@
                         <div>Bachelor of Computer Science</div>
                         <div>Mathematical Sciences Minor</div>
                         <div>4.0/4.0 GPA</div>
-                        <!-- Should education-extra have text smaller? -->
-                        <!--
-                        <div class="education-extra">
-                            <div>Mathematical Sciences Minor</div>
-                            <div>4.0/4.0 GPA</div>
-                        </div>
-                        -->
                     </div>
                 </div>
                 <div>
@@ -51,7 +66,7 @@
         <div id="experience" class="part">
             <h3>Experience</h3>
             <!-- TODO: ADD YEW EXPERIENCE -->
-            <div class="experience entry">
+            <div id="experience_xv6" class="experience entry">
                 <h4>XV6 Operating System Modifications - C</h4>
                 <div>
                     <div class="date">01.2026 - 05.2026</div>
@@ -70,7 +85,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nprint experience entry">
+            <div id="experience_occmon" class="experience entry">
                 <h4>Occupancy Monitoring System - Arduino C</h4>
                 <div>
                     <div class="date">10.2025 - 11.2025</div>
@@ -88,7 +103,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="experience entry">
+            <div id="experience_concurrent" class="experience entry">
                 <h4>Concurrent Programming Course - C++ Semaphore and Monitor Programs</h4>
                 <div>
                     <div class="date">03.2025 - 04.2025</div>
@@ -102,25 +117,25 @@
                     </ul>
                 </div>
             </div>
-            <div class="experience entry">
+            <div id="experience_harmoniq" class="experience entry">
                 <h4>Harmoniq - Python3 Music Player Application</h4>
                 <div>
                     <div class="date">02.2025 - 05.2025</div>
                 </div>
                 <div class="content">
                     <ul>
-                        <li>Adopt SCRUM development framework in a small software development team
+                        <li>Adopt SCRUM development framework in a software development team
                         </li>
                         <li>Collaborate with team using Git
                         </li>
                         <li>Build a working prototype of a music player application
                         </li>
-                        <li class="nprint">Learn and develop with UI library QT5
+                        <li id="experience_harmoniq_qt5">Learn and develop with UI library QT5
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="experience entry">
+            <div id="experience_online_store" class="experience entry">
                 <h4>Basic Online Store - PHP, HTML5, CSS, JavaScript, MySQL</h4>
                 <div>
                     <div class="date">10.2024 - 12.2024</div>
@@ -143,7 +158,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nprint experience entry">
+            <div id="experience_urip" class="experience entry">
                 <h4>Undergraduate Research Internship Program</h4>
                 <div>
                     <div class="date">09.2024 - 03.2025</div>
@@ -164,7 +179,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nprint experience entry">
+            <div id="experience_lab_assist" class="experience entry">
                 <h4>Computer Science Lab Assistant</h4>
                 <div>
                     <div class="date">09.2024 - 12.2025</div>
@@ -178,7 +193,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="experience entry">
+            <div id="experience_paper_engine" class="experience entry">
                 <h4>Paper Engine Project - Rust PDF Indexer</h4>
                 <div>
                     <div class="date">07.2024 - 08.2024</div>
@@ -202,7 +217,7 @@
                     -->
                 </div>
             </div>
-            <div class="nprint experience entry">
+            <div id="experience_stack_vm" class="experience entry">
                 <h4>Stack-based Virtual Machine - C</h4>
                 <div>
                     <div class="date">02.2024 - 05.2024</div>
@@ -220,7 +235,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nprint experience entry">
+            <div id="experience_cclc" class="experience entry">
                 <h4>College of Computing Learning Center Coach</h4>
                 <div>
                     <div class="date">01.2024 - 05.2026</div>
@@ -236,7 +251,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nprint experience entry">
+            <div id="experience_dijkstra" class="experience entry">
                 <h4>Dijkstra's Shortest Path Visualization - Haskell Graph Visualizer</h4>
                 <div>
                     <div class="date">12.2023 - 01.2024</div>
@@ -255,7 +270,7 @@
 
         <div id="leadership" class="part">
             <h3>Leadership</h3>
-            <div class="nprint leadership entry">
+            <div id="leadership_rgc" class="leadership entry">
                 <h4>Rhythm Game Club - Secretary</h4>
                 <div>
                     <div class="date">09.2025 - 05.2026</div>
@@ -267,7 +282,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nprint leadership entry">
+            <div id="leadership_jpc" class="leadership entry">
                 <h4>Japanese Club - President</h4>
                 <div>
                     <div class="date">09.2025 - 05.2026</div>
@@ -288,7 +303,7 @@
                     -->
                 </div>
             </div>
-            <div class="leadership entry">
+            <div id="leadership_ascii" class="leadership entry">
                 <h4>Association of Student Computing Interaction and Involvement MTU - Secretary</h4>
                 <div>
                     <div class="date">09.2024 - 03.2025</div>
@@ -305,7 +320,7 @@
 
         <div id="honors" class="part">
             <h3>Awards</h3>
-            <div class="nprint honor entry">
+            <div id="honors_wwh" class="honor entry">
                 <h4>
                     Winter Wonderhack MTU - Most Creative
                 </h4>
@@ -321,7 +336,7 @@
 
                 </div>
             </div>
-            <div class="honor entry">
+            <div id="honors_mmcg" class="honor entry">
                 <h4>
                     Monster Mini Code Golf MTU - Best Underclassmen, Best Python
                 </h4>
@@ -334,7 +349,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="honor entry">
+            <div id="honors_deans" class="honor entry">
                 <h4>
                     Michigan Technological University Dean's List 4.0
                 </h4>
@@ -352,3 +367,105 @@
         </div>
     </body>
 </html>
+<script>
+
+    /* Use this to get all ids on page:
+    /* document.querySelectorAll("*[id]").entries().map((e) => '"' + e[1].id + '"').join('\n')
+    */
+
+    const hideable_list = [
+        "experience_xv6",
+        "experience_occmon",
+        "experience_concurrent",
+        "experience_harmoniq",
+        "experience_harmoniq_qt5",
+        "experience_online_store",
+        "experience_urip",
+        "experience_lab_assist",
+        "experience_paper_engine",
+        "experience_stack_vm",
+        "experience_cclc",
+        "experience_dijkstra",
+        "leadership_rgc",
+        "leadership_jpc",
+        "leadership_ascii",
+        "honors_wwh",
+        "honors_mmcg",
+        "honors_deans",
+    ];
+
+    let show_list = hideable_list;
+
+    /* Set the show list using the filter code */
+    const search_params = new URLSearchParams(window.location.search);
+    if (search_params.get("filter_code")) {
+        const fc = search_params.get("filter_code");
+        filter_code.value = fc;
+        /* XXX: Think about dynamically adding generic filter options here */
+        if (fc === "000") {
+            generic_filter.options[1].selected = true;
+            show_list = hideable_list;
+        } else if (fc === "001") {
+            generic_filter.options[2].selected = true;
+            show_list = [
+                "experience_concurrent",
+                "experience_harmoniq",
+                "experience_online_store",
+                "leadership_jpc",
+                "leadership_ascii",
+                "honors_deans",
+            ];
+        } else if (fc === '002') {
+            generic_filter.options[3].selected = true;
+            show_list = [
+                "experience_urip",
+                "experience_lab_assist",
+                "experience_cclc",
+                "leadership_ascii",
+                "honors_deans",
+            ];
+        } else if (fc === '003') {
+            generic_filter.options[4].selected = true;
+            show_list = [
+                "experience_xv6",
+                "experience_occmon",
+                "experience_concurrent",
+                "experience_stack_vm",
+                "leadership_ascii",
+                "honors_deans",
+            ];
+        } else {
+            /* Unknown filter code, perhaps print a message */
+            uhoh_message.style.display = "inline";
+            uhoh_message.textContent = "Unknown filter code: " + fc;
+            show_list = [
+                "experience_xv6",
+                "experience_occmon",
+                "experience_concurrent",
+                "experience_harmoniq",
+                "experience_harmoniq_qt5",
+                "experience_online_store",
+                "experience_urip",
+                "experience_lab_assist",
+                "experience_paper_engine",
+                "experience_stack_vm",
+                "experience_cclc",
+                "experience_dijkstra",
+                "leadership_rgc",
+                "leadership_jpc",
+                "leadership_ascii",
+                "honors_wwh",
+                "honors_mmcg",
+                "honors_deans",
+            ];
+        }
+    }
+
+    /* Keep it simple, if not in the list, hide it! */
+    for (const id of hideable_list) {
+        if (!show_list.includes(id)) {
+            document.getElementById(id).style.display = "none";
+        }
+    }
+
+</script>
