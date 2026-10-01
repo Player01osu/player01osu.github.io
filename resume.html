@@ -411,9 +411,11 @@
         filter_code.value = fc;
         /* XXX: Think about dynamically adding generic filter options here */
         if (fc === "000") {
+            /* All */
             generic_filter.options[1].selected = true;
             show_list = hideable_list;
         } else if (fc === "001") {
+            /* Web Dev */
             generic_filter.options[2].selected = true;
             show_list = [
                 "experience_concurrent",
@@ -424,15 +426,17 @@
                 "honors_deans",
             ];
         } else if (fc === '002') {
+            /* Teaching */
             generic_filter.options[3].selected = true;
             show_list = [
-                "experience_urip",
+                // "experience_urip",
                 "experience_lab_assist",
                 "experience_cclc",
                 "leadership_ascii",
                 "honors_deans",
             ];
         } else if (fc === '003') {
+            /* Embedded */
             generic_filter.options[4].selected = true;
             show_list = [
                 "experience_xv6",
