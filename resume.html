@@ -24,7 +24,7 @@
                 <form class="web-header-element">
                     <label for="filter_code">Filter Code:</label>
                     <input style="width: 50px;" type="text" id="filter_code" name="filter_code">
-                    <input type="submit" id="filter-btn" value="Filter">
+                    <input class="button-7" type="submit" id="filter-btn" value="Filter">
                 </form>
                 <form class="web-header-element">
                     <label for="generic_filter">Generic Filter:</label>
@@ -37,18 +37,22 @@
                     </select>
                 </form>
             </div>
-            <div id="main-header">
-                <div id="name-header">
-                    <h1>Nate Pongtankul</h1>
-                </div>
-                <!-- XXX: On smaller devices, this should wrap onto new line -->
-                <div id="contact-info">
-                    <div style="display: inline; float: right;">
-                        <div><a href="mailto:nate@npong.com">nate@npong.com</a></div>
-                        <div><a href="tel:+12489494438">(248) 949 4438</a></div>
+                <div id="main-header">
+                    <div id="name-header">
+                        <h1>Nate Pongtankul</h1>
+                        <!--
+                        <h1 style="display: inline; white-space: nowrap;">Nate </h1>
+                        <h1 style="display: inline;">Pongtankul</h1>
+                        -->
+                    </div>
+                    <!-- XXX: On smaller devices, this should wrap onto new line -->
+                    <div id="contact-info">
+                        <div style="display: inline; float: right;">
+                            <div><a href="mailto:nate@npong.com">nate@npong.com</a></div>
+                            <div><a href="tel:+12489494438">(248) 949 4438</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </header>
 
         <div id="objectives" class="part">
@@ -514,6 +518,79 @@
                 "experience_harmoniq",
                 "experience_online_store",
                 "experience_yew",
+                "leadership_ascii",
+            ];
+        } else if (fc === '016') {
+            /* Garmin Software Engineer Intern - Automotive OEM */
+            /* https://careers.garmin.com/jobs/19999 */
+            /* Keywords: C, C++, Java, C#, Strong verbal and written,
+             * data-structures and OOP
+             */
+            show_list = [
+                "experience_kpride_grant",
+                "experience_harmoniq",
+                "experience_concurrent",
+                "experience_dijkstra",
+                "leadership_ascii",
+            ];
+        } else if (fc === '017') {
+            /* Accurant International Embedded Software Engineer */
+            /* Keywords: Rust, C++, Python, Javascript, embedded, git,
+             */
+            show_list = [
+                "experience_harmoniq",
+                "experience_concurrent",
+                "experience_occmon",
+                "experience_online_store",
+                "leadership_ascii",
+            ];
+        } else if (fc === '018') {
+            /* SpaceNav Application Develoer
+             * Bachelor's degree in Computer Science, Computer or Electrical
+             * Engineering, or Mathematics
+             * 3+ years’ programming in C/C++
+             * Good understanding of containers and infrastructure automation
+             * Strong background in object orientated programming paradigm
+             * Excellent verbal communication skills
+             * Experience with Continuous Integration and Continuous Delivery (CI/CD)
+             * Experience with cloud services, such as AWS
+             */
+            show_list = [
+                "experience_harmoniq",
+                "experience_concurrent",
+                "experience_online_store",
+                "leadership_ascii",
+            ];
+        } else if (fc === '019') {
+            /* Solace Associate Software Engineer
+             * Solid fundamentals in data structures, algorithms, and software design.
+             * Experience with at least one modern programming language (TypeScript, JavaScript, Python, Java, etc.). Bonus if you've worked with TypeScript, React, or Node.js.
+             * Projects that show you can build real things—personal projects, hackathons, internships, open source contributions. We care about what you've shipped, not just what you studied.
+             * A hunger to learn and an ego small enough to admit when you don't know something.
+             * Grit. You don't give up when things get hard. You Google, you ask questions, you figure it out.
+             * Strong communication skills. You can explain your thinking, take feedback without defensiveness, and collaborate with people who aren't engineers.
+             * Extreme bias toward action. You'd rather ship something imperfect and iterate than wait for perfect.
+             */
+            /* Requires written responses and a video wtf */
+            show_list = [
+                "experience_harmoniq",
+                "experience_online_store",
+                "experience_paper_engine",
+                "experience_dijkstra",
+                "leadership_ascii",
+            ];
+        } else if (fc === '020') {
+            /* Cyan Tech Solutions Jr SWE
+             * Engineering degree, preferably in Computer Science, Software Engineering, Mathematics, Physics, or Data Science, or equivalent practical experience.
+             * 1 to 3 years of professional software engineering experience.
+             * Working proficiency in at least one programming language such as Python, Java, or C#.
+             * Familiarity with APIs, data structures, and version control with Git.
+             * Some exposure to or genuine curiosity about AI tools, LLMs, and automation frameworks such as LangChain or LlamaIndex.
+             */
+            show_list = [
+                "experience_harmoniq",
+                "experience_online_store",
+                "experience_dijkstra",
                 "leadership_ascii",
             ];
 

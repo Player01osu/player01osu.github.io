@@ -50,3 +50,21 @@
     font-weight: 600;
     color: #5A5A5A;
 }
+
+@media screen and (width <= 900px) {
+    #main-header {
+        display: inline;
+        float: left;
+    }
+
+    #contact-info {
+        float: left;
+        margin: 0.4em 0 1em 0;
+    }
+    /*
+    #contact-info {
+        position: relative;
+        right: 120px;
+    }
+    */
+}
