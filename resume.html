@@ -71,6 +71,24 @@
 
         <div id="experience" class="part">
             <h3>Experience</h3>
+            <div id="experience_rank_based_voting" class="experience entry">
+                <h4>Rank-Based Voting Site</h4>
+                <div>
+                    <div class="date">10.2026 - 11.2026</div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>Use svelte and typescript in the frontend to create fast, interactive, and user-friendly interface
+                        </li>
+                        <li>Use PostgreSQL to store and manage user votes and polls
+                        </li>
+                        <li>Use Vite to build and deploy application
+                        </li>
+                        <li>Manage server using nginx as a reverse proxy and wireguard for speed and security
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div id="experience_kpride_grant" class="experience entry">
                 <h4>Keweenaw Pridefest Grant</h4>
                 <div>
@@ -432,6 +450,7 @@
     */
 
     const hideable_list = [
+        "experience_rank_based_voting",
         "experience_kpride_grant",
         "experience_jc",
         "experience_xv6",
@@ -473,10 +492,10 @@
             generic_filter.options[2].selected = true;
             show_list = [
                 // "experience_concurrent",
+                "experience_rank_based_voting",
                 "experience_harmoniq",
                 "experience_online_store",
                 "experience_yew",
-                "leadership_jpc",
                 "leadership_ascii",
             ];
         } else if (fc === '002') {
