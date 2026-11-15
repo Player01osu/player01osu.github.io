@@ -17,6 +17,13 @@
     grid-row-end: 1;
 }
 
+#name-header {
+    margin: 0 0 0 0;
+    font-weight: 700;
+    font-size: 3.4em;
+    line-height: 1em;
+}
+
 .entry {
     padding: 0 0 0 1.1em;
     margin: 0.64rem 0;

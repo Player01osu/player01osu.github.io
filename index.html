@@ -5,43 +5,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Embed stuff -->
+        <meta content="Tutor - Nate Pongtankul" property="og:title" />
+        <meta content="Tutor information" property="og:description" />
+        <meta content="https://pages.syourai.org/tutor" property="og:url" />
+        <meta content="https://pages.syourai.org/assets/lilium.jpg" property="og:image" />
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
     </head>
     <body>
+        <nav class="nprint">
+            <!-- Header menu -->
+            <div id="header-menu">
+                <a href="/" class="header-menu-item">Home</a>
+                <a href="blogs" class="header-menu-item">Blogs</a>
+                <a href="tutor" class="header-menu-item">Tutor</a>
+                <a href="resume?filter_code=002" class="header-menu-item">Resume</a>
+            </div>
+        </nav>
 
+        <h1>Home</h1>
+
+        <div style="display: flex;">
+            <img src="https://share.syourai.org/portrait-700.jpg" width="240" height="240" style="object-fit: cover; border-radius: 50%; margin: 0.2em 0.4em;">
+
+            <div>Hi! I'm Nate Pongtankul. I love engineering and science. I spend most of my days programming, learning new things, and playing rhythm games.</div>
+        </div>
     </body>
 </html>
 
 <script>
-
-if (window.location.hash !== "") {
-    let location = window.location;
-    let redirect = location.origin + location.pathname + '?' + location.hash.slice(1);
-    location.replace(redirect);
-}
-
-function access_token_element(access_token) {
-    let div = document.createElement("div");
-    let details = document.createElement("details");
-    let summary = document.createElement("summary");
-    let copy_button = document.createElement("button");
-
-    div.id = "access_token";
-
-    summary.innerText = "Access Token (Keep this a secret!)";
-    details.innerText = access_token;
-    copy_button.innerText = "Copy to clipboard";
-
-    copy_button.onclick = () => navigator.clipboard.writeText(access_token);
-
-    details.appendChild(summary);
-    div.appendChild(details);
-    div.appendChild(copy_button);
-    document.body.appendChild(div);
-}
-
-let params = new URLSearchParams(document.location.search);
-let access_token = params.get("access_token");
-if (access_token != null) {
-    access_token_element(access_token);
-}
 </script>
