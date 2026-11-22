@@ -164,3 +164,80 @@ footer {
   box-shadow: none;
 }
 
+
+#main-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+}
+
+#contact-info {
+    margin: 0 0 0 0;
+    font-size: 1.15em;
+    font-weight: 550;
+    float: right;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#name-header {
+    margin: 0 0 0 0;
+    font-weight: 700;
+    font-size: 3.4em;
+    line-height: 1em;
+}
+
+.entry {
+    padding: 0 0 0 1.1em;
+    margin: 0.64rem 0;
+    display: grid;
+    grid-template-columns: auto 8.6em;
+    grid-auto-rows: auto auto;
+}
+
+.content {
+    margin: 0.0em 0;
+    padding: 0 0 0 0;
+}
+
+.education-extra {
+    font-size: 0.8em;
+}
+
+.date {
+    padding: 0 0 0 1.2rem;
+    display: inline;
+    float: left;
+    color: #404040;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.gpa {
+    padding: 0 0 0 1.2rem;
+    margin: 1.5em 0 0em 0;
+    font-size: 0.90em;
+    font-weight: 600;
+    color: #5A5A5A;
+}
+
+@media screen and (width <= 900px) {
+    #main-header {
+        display: inline;
+        float: left;
+    }
+
+    #contact-info {
+        float: left;
+        margin: 0.4em 0 1em 0;
+    }
+    /*
+    #contact-info {
+        position: relative;
+        right: 120px;
+    }
+    */
+}

@@ -1,0 +1,18 @@
+{% assign link_name_pairs_pre = "/,Home./blogs,Blogs./tutor,Tutor./resume,Resume./contact,Contact" %}
+{% assign link_name_pairs = link_name_pairs_pre | split: "." %}
+
+<div id="main_header">
+    <nav>
+        {% for link_name_pair_pre in link_name_pairs %}
+            {% assign link_name_pair = link_name_pair_pre | split: "," %}
+            {% assign link = link_name_pair[0] %}
+            {% assign current_url = page.url | remove: ".html" %}
+            {% assign name = link_name_pair[1] %}
+            {% if current_url == link %}
+                <div><a class="focused" href="{{link}}">{{name}}</a></div>
+            {% else %}
+                <div><a href="{{link}}">{{name}}</a></div>
+            {% endif %}
+        {% endfor %}
+    </nav>
+</div>
