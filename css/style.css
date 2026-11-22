@@ -48,10 +48,9 @@ li:before {
 }
 
 h1 {
-    margin: 0 0 0 0;
     font-weight: 700;
     font-size: 3.4em;
-    line-height: 1em;
+    margin: 0.2em 0em;
 }
 
 h2 {
