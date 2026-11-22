@@ -1,9 +1,0 @@
-@use 'sass:color';
-
-$base-font-size: 16px;
-$base-text-color: #000000;
-
-$content-bg-color: #FFFFFF;
-$main-bg-color: color.scale($content-bg-color, $lightness: -5%);
-// $main-bg-color: #FFFFFF;
-// $content-bg-color: color.scale($main-bg-color, $lightness: -5%);
