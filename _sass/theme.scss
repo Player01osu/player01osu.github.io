@@ -1,11 +1,11 @@
-@use "variables" as var;
+@use "variables" as *;
 @use 'sass:color';
 
 body {
-  font-size: var.$base-font-size;
+  font-size: $base-font-size;
   font-family: sans-serif;
-  color: var.$base-text-color;
-  background-color: var.$main-bg-color;
+  color: $base-text-color;
+  background-color: $main-bg-color;
 }
 
 #main_header {
@@ -47,11 +47,11 @@ body {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0;
-  background: color.scale(var.$main-bg-color, $lightness: -5%);
+  background: color.scale($main-bg-color, $lightness: -5%);
 }
 
 .main_content {
-  background-color: var.$content-bg-color;
+  background-color: $content-bg-color;
   max-width: 50em;
   min-height: 50em;
   padding: 1em 3em;
