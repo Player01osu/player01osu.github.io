@@ -1,11 +1,12 @@
-@use "variables" as *;
-@use 'sass:color';
+// @use "variables" as *;
+@import "variables";
 
 body {
   font-size: $base-font-size;
   font-family: sans-serif;
   color: $base-text-color;
   background-color: $main-bg-color;
+  line-height: 1.75em;
 }
 
 #main_header {
@@ -47,7 +48,7 @@ body {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0;
-  background: color.scale($main-bg-color, $lightness: -5%);
+  background: color(from $main-bg-color srgb 90% 90% 90%);
 }
 
 .main_content {
