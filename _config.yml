@@ -4,6 +4,7 @@ description: My website
 baseurl: "/"
 url: "https://npong.com"
 github_username: player01osu
+source_code: "https://github.com/Player01osu/player01osu.github.io"
 permalink: /blog/:title
 plugins:
   - jekyll-feed
