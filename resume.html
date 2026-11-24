@@ -606,11 +606,69 @@
                 "leadership_ascii",
             ];
 
+        } else if (fc === '021') {
+            /* KUKA Software Developer Intern */
+            /* Pursuing Bachelor's degree in Computer Science, Software Engineering, Computer
+             * Engineering, Electrical Engineering or similar field.
+             * 1-year experience developing in at least one of the following: C#/Java/JScript/C++/C
+             * 1-year experience developing test cases and using automated data analysis.
+             * Experience with control systems and programming PLCs. (Rockwell/Siemens).
+             * Experience using AutoCAD, SolidWorks, EPlan, or other design and drafting software packages.
+             * Experienced at reading technical drawings and electrical diagrams.
+             * Previous experience in the automotive, aerospace, or broader manufacturing industries.
+             * Experience in Test Driven Development or Industrial Digital Twin testing environments.
+             * Strong interpersonal and communication skills, especially when working closely with
+             * other teams.
+             */
+            generic_filter.options[4].selected = true;
+            show_list = [
+                "experience_xv6",
+                "experience_occmon",
+                "experience_concurrent",
+                "experience_stack_vm",
+                "leadership_ascii",
+            ];
+        } else if (fc === '022') {
+            /* Responsibilities Also Include
+             * Under the guidance of experienced mentors and as a valued member of our
+             * engineering team, you will participate in the following missions: Next-Gen
+             * SDV Architecture: Assist in the design and development of robust C++
+             * middleware, APIs, and OS components for future Software-Defined
+             * Vehicles. Help implement, test, and debug software using C/C++ and
+             * Python across embedded and Linux-based platforms. Contribute to
+             * building the backend services and programmable interfaces required
+             * to power personalized, AI-enhanced user experiences. Support the
+             * team in analyzing system logs, reproducing technical issues, and
+             * troubleshooting connectivity and performance problems.
+             * Hardware-Software Interface: Help integrate smart algorithms
+             * with physical automotive hardware. Learn and apply critical
+             * automotive safety standards (such as ISO 26262) in real-world
+             * development. AI-Driven Automation: Explore and leverage modern
+             * artificial intelligence tools to help optimize CI/CD workflows and
+             * improve automated testing procedures. Agile Collaboration: Work
+             * closely alongside senior developers in a fast-paced Agile
+             * environment, utilizing modern Software Development Life Cycle (SDLC)
+             * tools and best practices.
+             *
+             * What You Should Have
+             *
+             *  pursuing a Bachelor's Degree in Computer Engineering, Software Engineering, or related field.
+             */
+            generic_filter.options[4].selected = true;
+            show_list = [
+                "experience_rank_based_voting",
+                "experience_xv6",
+                "experience_occmon",
+                "experience_harmoniq",
+                "leadership_ascii",
+            ];
         } else {
             /* Unknown filter code, perhaps print a message */
             uhoh_message.style.display = "inline";
             uhoh_message.textContent = "Unknown filter code: " + fc;
             show_list = [
+                "experience_rank_based_voting",
+                "experience_kpride_grant",
                 "experience_xv6",
                 "experience_occmon",
                 "experience_concurrent",
