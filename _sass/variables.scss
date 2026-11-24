@@ -3,5 +3,6 @@ $base-text-color: #000000;
 
 $content-bg-color: #FFFFFF;
 $main-bg-color: color(from $content-bg-color srgb 95% 95% 95%);
+$header-footer-bg-color: color(from $main-bg-color srgb 90% 90% 90%);
 // $main-bg-color: #FFFFFF;
 // $content-bg-color: color.scale($main-bg-color, $lightness: -5%);

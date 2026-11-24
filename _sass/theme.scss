@@ -48,7 +48,7 @@ body {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0;
-  background: color(from $main-bg-color srgb 90% 90% 90%);
+  background: $header-footer-bg-color;
 }
 
 .main_content {
