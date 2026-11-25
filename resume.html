@@ -35,6 +35,10 @@
                         <option value="003">Embedded</option>
                     </select>
                 </form>
+                <label>
+                    <input id='toggle_checkboxes_checkbox' type="checkbox">
+                    Toggle Checkboxes
+                </label>
             </div>
                 <div id="main-header">
                     <div>
@@ -776,4 +780,76 @@
         }
     }
 
+    /* First, wrap h4 around wrapper div */
+    document.querySelectorAll('h4').forEach((h4) => {
+        const html = h4.parentElement.outerHTML;
+        const new_html = "<div>" + html + "</div>";
+        h4.parentElement.outerHTML = new_html;
+    });
+
+
+    function create_checkboxes() {
+        /* Then, append nprint css onto wrapper div */
+        /* Because entry div has display: grid, display: none
+         * does not play nice with it
+         */
+        document.querySelectorAll('h4').forEach((h4) => {
+            const custom_check_container = document.createElement('div');
+            const custom_check = document.createElement('span');
+            const input = document.createElement('input');
+            const wrapper_div = h4.parentElement.parentElement;
+            input.type = 'checkbox';
+            input.classList.add('nprint');
+            input.classList.add('toggle-check');
+            input.checked = true;
+
+            custom_check.classList.add('nprint');
+            custom_check.classList.add('toggle-check');
+
+            custom_check_container.classList.add('toggle-check-container');
+            custom_check_container.append(input);
+            custom_check_container.append(custom_check);
+
+            input.onchange = () => {
+                if (input.checked) {
+                    wrapper_div.classList.remove('nprint');
+                } else {
+                    wrapper_div.classList.add('nprint');
+                }
+            }
+            // h4.prepend(custom_check_container);
+            h4.prepend(input);
+        });
+
+        document.querySelectorAll('li').forEach((li) => {
+            const input = document.createElement('input');
+            input.type = 'checkbox';
+            input.classList.add('nprint');
+            input.classList.add('toggle-check');
+            input.checked = true;
+            input.onchange = () => {
+                if (input.checked) {
+                    li.classList.remove('nprint');
+                } else {
+                    li.classList.add('nprint');
+                }
+            }
+            li.prepend(input);
+        });
+    }
+
+    function remove_checkboxes() {
+        document.querySelectorAll('.toggle-check').forEach((element) => {
+            element.remove();
+        })
+    }
+
+    function toggle_checkboxes(e) {
+        if (e.target.checked) {
+            create_checkboxes();
+        } else {
+            remove_checkboxes();
+        }
+    }
+    toggle_checkboxes_checkbox.onchange = toggle_checkboxes;
 </script>

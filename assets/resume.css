@@ -117,12 +117,6 @@ footer {
     margin: 0.64rem 0;
 }
 
-@media print {
-    .nprint {
-        display: none;
-    }
-}
-
 /* Button Style */
 /* https://getcssscan.com/css-buttons-examples */
 .button-7 {
@@ -224,6 +218,33 @@ footer {
     color: #5A5A5A;
 }
 
+.toggle-check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.toggle-check-container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.toggle-check {
+    height: 35px;
+    width: 35px;
+    background-color: #eee;
+}
+
+
 @media screen and (width <= 900px) {
     #main-header {
         display: inline;
@@ -241,3 +262,10 @@ footer {
     }
     */
 }
+
+@media print {
+    .nprint {
+        display: none !important;
+    }
+}
+
